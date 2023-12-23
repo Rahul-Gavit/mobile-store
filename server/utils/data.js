@@ -402,3 +402,5 @@ const mobiles = [
     url: "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/w/z/u/-original-imagtxvtmxpagdpn.jpeg?q=70",
   },
 ];
+
+module.exports = mobiles;

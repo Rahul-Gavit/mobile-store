@@ -1,5 +1,4 @@
 require("dotenv").config();
-
 const express = require("express");
 const app = express();
 const port = 8080;
@@ -10,6 +9,13 @@ const Mobile = require("./model/mobile");
 app.use(cors());
 
 const mongoURL = process.env.MONGO_URL;
+
+if (!process.env.MONGO_URL) {
+  console.error(
+    "MongoDB connection string not found. Please check your .env file."
+  );
+  process.exit(1);
+}
 
 mongoose
   .connect(mongoURL)

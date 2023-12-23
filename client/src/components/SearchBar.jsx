@@ -6,7 +6,6 @@ import {
   selectSearchQuery,
   selectFilters,
   selectAllMobiles,
-  setFilters,
 } from "../redux/slices/SearchSlice";
 
 const SearchBar = () => {
@@ -60,7 +59,6 @@ const SearchBar = () => {
   const submitHandler = (event) => {
     event.preventDefault();
     handleSearch();
-    console.log(filters);
   };
 
   return (
