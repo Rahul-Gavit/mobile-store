@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 8080 || process.env;
 const cors = require("cors");
 const mongoose = require("mongoose");
 const Mobile = require("./model/mobile");
