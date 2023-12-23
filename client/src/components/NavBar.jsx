@@ -7,7 +7,7 @@ import { NavLink, useLocation } from "react-router-dom";
 const NavBar = () => {
   const count = useSelector((state) => state.counter.value);
   const location = useLocation();
-  const isSearchVisible = location.pathname === "/mobiles";
+  const isSearchVisible = location.pathname === "/" || "/mobiles";
 
   return (
     <div className="m-4 sticky top-0">
