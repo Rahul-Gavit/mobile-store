@@ -32,6 +32,7 @@ function App() {
   }, [dispatch]);
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/mobiles" element={<Home />} />
       <Route path="/mobiles/:id" element={<Mobile />} />
       <Route path="/cart" element={<Cart />} />
