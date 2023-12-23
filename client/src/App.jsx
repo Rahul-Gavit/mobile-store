@@ -9,6 +9,7 @@ import { setData } from "./redux/slices/DataSlice";
 import Cart from "./pages/Cart";
 import Mobile from "./pages/Mobile";
 import { setAllMobiles } from "./redux/slices/SearchSlice";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function App() {
       <Route path="/mobiles" element={<Home />} />
       <Route path="/mobiles/:id" element={<Mobile />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
 }
